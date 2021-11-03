@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <canvas id="canvas" width="1400" height="750"></canvas>
+
+
+    <div class="toolbox">
+        <button id="background-color-change"><span></span><input type="color" name="" id="background-change"
+                value="#FFFFFF"><span id="background-caption">Background</span></button>
+        <button id="brush" class="brush-hover"><i class="fas fa-paint-brush"></i>
+
+        </button>
+        <button id="decrease">-</button>
+        <span id="size">20</span>
+        <button id="increase">+</button>
+
+        <input type="color" name="" id="color">
+
+
+        <button id="eraser" class="eraser-hover"><i class="fas fa-eraser"></i>
+        </button>
+
+
+        <button id="decreaseEraser">-</button>
+        <span id="sizeEraser">20</span>
+        <button id="increaseEraser">+</button>
+
+        <button id="download">Download</button>
+        <button id="clear">X</button>
+
+    </div>
+    <script src=" script.js"></script>
+</body>
+
+</html>

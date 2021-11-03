@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+
+
+* {
+    box-sizing:border-box;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: url(bg3.jfif);
+}
+
+#canvas {
+    border: 2px solid navy;
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+
+#background-color-change {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+#background-color-change #background-change {
+    border: none;
+    background-color: orange !important;
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+}
+#background-color-change #background-caption {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+#background-color-change:active {
+    transform: scale(1.05) !important;
+}
+.toolbox {
+    background-color: rgba(0, 42, 230, 0);
+    
+    display: flex;
+    width: 1416px;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.toolbox > * {
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 6px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+}
+
+
+button {
+    background-color: orange !important;
+    border: 2px solid navy !important;
+    border-radius: 5px !important;
+    color: navy !important;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#download {
+    
+    width: 200px;
+}
+
+#download a {
+    color: navy !important;
+    text-decoration: none !important;
+}
+
+
+button:active {
+    transform: scale(1.1);
+}
+
+#size, #sizeEraser {
+    border-radius: 50%;
+    background-color: rgba(255, 166, 0, 0.658) !important;
+    border: 2px solid navy;
+}
+
+#color {
+    background-color: orange;
+    border: 2px solid navy;
+    margin-right: auto;
+}
+
+
+.eraserClass#eraser {
+    background-color: navy !important;
+    color: white !important;
+        border: 3px solid orange !important;
+
+    transform: scale(1.3);
+    transition: ease-in 0.14s;
+}
+
+.brushClass#brush {
+    background-color: navy !important;
+    color: white !important;
+    border: 3px solid orange !important;
+    transform: scale(1.3);
+    transition: ease-in 0.14s;
+
+}
+
+#increaseEraser {
+    margin-right: auto;
+}
+
+
+#eraser {
+    position: relative;
+}
+
+#brush {
+    position: relative;
+}
+
+
+.eraser-hover#eraser::before {
+    content: 'ERASER';
+    position: absolute;
+    top: -19px;
+    font-size: 12px !important;
+    color: navy !important;
+}
+
+.brush-hover#brush::before {
+    content: 'BRUSH';
+    position: absolute;
+    top: -19px;
+    font-size: 12px !important;
+    color: navy !important;
+}
